@@ -4,9 +4,9 @@
   "description": "Challenge - Developer Backend Goomer",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app/server.js",
+    "start": "node dist/server/server.js",
     "test": "cross-env NODE_ENV=develop jest --runInBand --detectOpenHandles",
-    "dev": "cross-env NODE_ENV=developiment ts-node-dev --ignore-watch node_modules dist/app/server.js",
+    "dev": "cross-env NODE_ENV=developiment ts-node-dev --ignore-watch node_modules dist/server/server.js",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage",
     "build": "babel src --out-dir dist --extensions \".ts,.tsx\" --watch"
@@ -48,6 +48,7 @@
     "@babel/preset-typescript": "^7.23.3",
     "@types/cors": "^2.8.17",
     "@types/jest": "^29.5.11",
+    "@types/jsonwebtoken": "^9.0.5",
     "@types/supertest": "^6.0.2",
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.6",

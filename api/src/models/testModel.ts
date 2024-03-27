@@ -9,8 +9,7 @@ class Test {
       const sql = 'SELECT * FROM aliens_abduction';
 
       connection.query(sql, (erro: any, resultados: any) => {
-        // Não esqueça de fechar a conexão após a execução da consulta
-        // connection.end();
+        connection.end();
 
         if (erro) {
           response.status(400).json(erro);

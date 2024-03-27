@@ -10,9 +10,9 @@ module.exports = {
   },
   testMatch: ['**/__tests__/**/*.test.ts'],
   collectCoverageFrom: [
-    'src/**/*.ts', // Ajuste conforme a estrutura do seu projeto
-    '!src/**/*.spec.ts', // Exclui arquivos de teste
-    '!src/index.ts', // Exclui o arquivo principal, se houver
+    'src/**/*.ts',
+    '!src/**/*.spec.ts',
+    '!src/index.ts',
   ],
 
   reporters: [
