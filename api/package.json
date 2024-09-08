@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/server/server.js",
-    "test": "cross-env NODE_ENV=develop jest --runInBand --detectOpenHandles",
-    "dev": "cross-env NODE_ENV=developiment ts-node-dev --ignore-watch node_modules dist/server/server.js",
+    "test": "cross-env NODE_ENV=development jest --runInBand --detectOpenHandles",
+    "dev": "cross-env NODE_ENV=development ts-node-dev --ignore-watch node_modules dist/server/server.js",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage",
     "build": "babel src --out-dir dist --extensions \".ts,.tsx\" --watch"
